@@ -75,6 +75,9 @@ def resposta(respostaCorreta, pergunta):
     while (resp == ""):
         #A ideia é fazer tipo 20 perguntas 5 sobre cada topico e jogar elas em ordem depois verificar quais letras da resposta (do usuario), tem na resposta correta!
         resp = str(input(" >>> "))
+        for i in range(len(resp)):
+            if (resp[i] in respostaCorreta):
+                print(f"A resposta contém \"{resp[i]}\"!")
         if (resp.lower() == respostaCorreta):
             print(f"Parabéns! Você acertou! a resposta era '{respostaCorreta}'! ")
         else:
