@@ -64,6 +64,88 @@ perg5 = """
                                       /.'    .'
                                        /.'/.'
 """
+perg6 = """
+           ___
+   _______|___|______
+__|__________________|
+\  ]________________[ `---. 
+ `.                   ___  L
+  |   _              |   L |
+  | .'_`--.___   __  |   | |      
+  |( 'o`   - .`.'_ ) |   F F       
+  | `-._      `_`./_ |  / /         
+  J   /\.\    ( .'/ )F.' /
+   L ,__//`---'`-'_/J  .'
+   J  /-'        '/ F.'
+    L            ' J'
+    J `.`-. .-'.'  F
+     L  `.-'.-'   J
+     |__(__(___)__|
+     F            J
+    J              L
+    |______________|
+"""
+perg7 = """
+                !
+                |
+                |    |~/
+                |   _|~
+  .============.|  (_|   |~/
+.-;____________;|.      _|~
+| [_________I__] |     (_|
+|  ''''' (_) (_) |
+| .=====..=====. |
+| |:::::||:::::| |
+| '=====''=====' |  jgs
+'----------------'
+"""
+perg8 = """
+ _____________________
+|  _________________  |
+| |              /  | |
+| |       /\    /   | |
+| |  /\  /  \  /    | |
+| | /  \/    \/     | |
+| |/             JO | |
+| |_________________| |
+|  ___ ___ ___   ___  |
+| | 7 | 8 | 9 | | + | |
+| |___|___|___| |___| |
+| | 4 | 5 | 6 | | - | |
+| |___|___|___| |___| |
+| | 1 | 2 | 3 | | x | |
+| |___|___|___| |___| |
+| | . | 0 | = | | / | |
+| |___|___|___| |___| |
+|_____________________|
+"""
+perg9 = """
+                                    _    ~
+                  __    .-----, '
+   .-------------(__)--'     / \  .  -   "
+  /  ========         :     |.-|  _       _
+  \                   :     |'-|      ~
+   '-------------------.     \ /  '  -   .
+jgs                     '-----' .
+                                    ~   _
+"""
+perg10 = """
+    _....._
+  .'       '.-------------,   ~~_  ~ - ~
+ /   ====   '            /    ~. - ~~ ~
+|   ======   ;__________/   ~-  _~  ~
+|   ======   |
+ \   ====   /
+  '.      .'
+    \   (`
+     \ __\'
+      \ _ \'
+      /   |
+ jgs  |   \'
+      '-,,-'
+        ||
+       //
+"""
 
 
 print("<< Jogo do Advinhe o Desenho! >>")
@@ -79,7 +161,7 @@ def resposta(respostaCorreta, pergunta):
             if (resp[i] in respostaCorreta):
                 print(f"A resposta contém \"{resp[i]}\"!")
         if (resp.lower() == respostaCorreta):
-            print(f"Parabéns! Você acertou! a resposta era '{respostaCorreta}'! ")
+            print(f"Parabéns! Você acertou! a resposta era '{respostaCorreta}'! \n")
         else:
             print("Resposta Incorreta! Tente denovo!")
             resp = ""
@@ -97,3 +179,13 @@ print("Isso aí! Vamos para a quarta pergunta!")
 resposta('coruja', perg4)
 print("Bora Lá! Vamos para a quinta pergunta!")
 resposta('ganso', perg5)
+print("Maravilhoso! Que tal trocar o tema agora?")
+resposta('liquidificador', perg6)
+print("Vambora! Que tal outra!?")
+resposta('radio', perg7)
+print("E mais uma?")
+resposta('calculadora', perg8)
+print("E vamos para a nona pergunta!")
+resposta('lanterna', perg9)
+print("E para a ultima pergunta deste tema... temos...")
+resposta('secador de cabelo', perg10)
